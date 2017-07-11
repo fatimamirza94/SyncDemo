@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jay.syncdemo.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RView"
+        android:layout_width="match_parent"
+        android:layout_height="462dp"
+        android:layout_below="@+id/linearLayout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:layout_gravity="bottom">
+
+        <EditText
+            android:id="@+id/EmailET"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="Email"/>
+
+        <EditText
+            android:id="@+id/NameET"
+            android:layout_width="148dp"
+            android:layout_height="50dp"
+            android:hint="Name"/>
+
+        <Button
+            android:id="@+id/SubmitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"/>
+
+    </LinearLayout>
+
+</FrameLayout>
